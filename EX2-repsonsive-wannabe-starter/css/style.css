@@ -134,9 +134,20 @@ img {
     .container {
         width: 100%;
         display: flex;
+        flex-direction: column;
     }
     .row {
-        flex-direction: column;
+     flex-direction: column;
+    }
+    .text-center {
+        padding-top: 50px;
+    }
+    .card {
+        margin-bottom: 50px;
+    }
+
+    .lessons .col {
+        width: 100%;
     }
 
     .why-us .col, .steps .col, .lessons.col {
@@ -146,11 +157,27 @@ img {
     .why-us .col, .steps .col, .lessons.col:last-child {
         margin-bottom: 0px;
     } 
+    .why-us {
+        background-color: rgb(34, 33, 33);
+        margin-bottom: 0;
+    }
+    .steps {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1160px) {
+    .container {
+        width: 100%;
+    }
+     
+    
 }
 
 @media screen and (max-width: 768px) {
     .container {
         width: 100%;
+     
     }
 }
 
